@@ -1,9 +1,13 @@
 try:
     file = open('sample.txt', 'r')
     lines = file.readlines()
+    print("Reading file contents.")
+
     for i in range(0,len(lines)):
-        print(lines[i])
+
+        print("Line",i, ":", lines[i])
 
 except:
-    print("no such file exists.")
+
+    print("Error: The file 'sample.txt' was not found.")
 
