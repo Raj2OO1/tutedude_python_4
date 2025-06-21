@@ -7,6 +7,8 @@ try:
 
         print("Line",i, ":", lines[i])
 
+    file.close()
+
 except:
 
     print("Error: The file 'sample.txt' was not found.")
